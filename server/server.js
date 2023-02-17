@@ -1,12 +1,12 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
-import {Configuration, OpenAIApi} from 'openai';
+import { Configuration, OpenAIApi } from 'openai';
 
 dotenv.config();
 
 const configuration = new Configuration({
-    organization: "org-0L6h2Vg13Ewk2qD7apKcrluD"
+    organization: "org-0L6h2Vg13Ewk2qD7apKcrluD",
     apiKey: process.env.OPENAI_API_KEY,
 });
 
