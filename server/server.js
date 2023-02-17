@@ -1,7 +1,7 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
-import { Configuration, OpenAIApi } from 'openai';
+import {Configuration, OpenAIApi} from 'openai';
 
 dotenv.config();
 
@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.get('/', async (req, res) => {
     res.status(200).send({
-        message: 'Hello from Jarvis',
+        message: 'Whats goodie, whats goodie, whats goodie. Its ya boy, Jarvis.',
     })
 });
 
@@ -44,4 +44,4 @@ app.post('/', async (req, res) => {
     }
 })
 
-app.listen(5000, () => console.log('Server is running on port http://localhost:5000'));
+app.listen(5000, () => console.log('Server is running on port https://jarvis-22jb.onrender.com/'));
